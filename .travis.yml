@@ -1,6 +1,67 @@
-sudo: false
-env:
-  - TESTFOLDER=TravisCI/C++/Collatz
-  - TESTFOLDER=TravisCI/Python/Collatz
+language: 
+   - cpp
+   - python
 
-script: "bundle exec rspec $TESTFOLDER"
+python:
+  - "3.4"
+compiler: 
+  - gcc
+  - python
+
+sudo: false
+addons:
+  apt: 
+   sources: 
+      - ubuntu-toolchain-r-test
+   packages:
+      - python3
+      - pip3
+      - gcc-4.8 
+      - g++-4.8
+      - clang
+      - doxygen
+      - valgrind
+      - libgtest-dev
+      - libboost-dev
+ 
+before_script:
+    - uname -a
+    - printenv
+    - clang++ --version 2>&1 | grep clang
+    - g++ --version 2>&1 | grep g++
+    - gcov --version | grep gcov
+    - valgrind --version
+    - grep "#define BOOST_VERSION " /usr/include/boost/version.hpp
+    - doxygen --version
+
+install: 
+    # Install gtest without sudo 
+    - mkdir ~/gtest && cd ~/gtest
+    - export LIBRARY_PATH=$(pwd)
+    - cp -r /usr/src/gtest/* ./
+    - cmake -D CMAKE_INSTALL_PREFIX:PATH=./ ./
+    - make
+    - cd -
+
+script:
+    - cd TravisCI/C++/Collatz
+    - ls -al
+    - make Collatz.log
+    - make collatz-tests
+    - ls -al
+    - make html
+    - ls -al
+    - make test
+    - make clean
+    - make test CXX=clang++
+    - ls -al
+    - make check
+    - cd -
+    - cd TravisCI/Python/Collatz
+    - pip install -r requirements.txt
+    - make collatz-tests
+    - make Collatz.html
+    - make Collatz.log
+    - make test
+    - make check
+    - cd - 
