@@ -9,7 +9,6 @@ addons:
       - python3
       - gcc-4.8 
       - g++-4.8
-      - gcov-4.6
       - clang
       - doxygen
       - valgrind
