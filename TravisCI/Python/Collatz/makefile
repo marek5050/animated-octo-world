@@ -1,9 +1,5 @@
 FILES :=                              \
     .gitignore                        \
-    collatz-tests/mb39822-RunCollatz.in   \
-    collatz-tests/mb39822-RunCollatz.out  \
-    collatz-tests/mb39822-TestCollatz.py  \
-    collatz-tests/mb39822-TestCollatz.out \
     .travis.yml                       \
     Collatz.html                      \
     Collatz.log                       \
@@ -49,7 +45,7 @@ test: RunCollatz.out TestCollatz.out
 collatz-tests:
 	git clone https://github.com/cs373-summer-2015/collatz-tests.git
 
-Collatz.html: Collatz.py
+html: Collatz.py
 	pydoc3 -w Collatz
 
 Collatz.log:
