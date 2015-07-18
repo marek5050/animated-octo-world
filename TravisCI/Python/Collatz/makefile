@@ -55,8 +55,8 @@ RunCollatz.out: RunCollatz.py
 	./RunCollatz.py < RunCollatz.in > RunCollatz.out
 
 TestCollatz.out: TestCollatz.py
-	coverage3 run    --branch TestCollatz.py >  TestCollatz.out 2>&1
-	coverage3 report -m                      >> TestCollatz.out
+	coverage run    --branch TestCollatz.py >  TestCollatz.out 2>&1
+	coverage report -m                      >> TestCollatz.out
 
 
 push:
