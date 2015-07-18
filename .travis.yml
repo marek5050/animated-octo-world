@@ -1,13 +1,6 @@
-language: 
-   - cpp
-   - python
-
-python:
-  - "3.4"
-compiler: 
-  - gcc
-  - python
-
+env:
+  - TESTFOLDER=TravisCI/C++/Collatz
+  - TESTFOLDER=TravisCI/Python/Collatz
 sudo: false
 addons:
   apt: 
@@ -44,7 +37,7 @@ install:
     - cd -
 
 script:
-    - cd TravisCI/C++/Collatz
+    - cd $TESTFOLDER 
     - ls -al
     - make Collatz.log
     - make collatz-tests
@@ -53,15 +46,3 @@ script:
     - ls -al
     - make test
     - make clean
-    - make test CXX=clang++
-    - ls -al
-    - make check
-    - cd -
-    - cd TravisCI/Python/Collatz
-    - pip install -r requirements.txt
-    - make collatz-tests
-    - make Collatz.html
-    - make Collatz.log
-    - make test
-    - make check
-    - cd - 
