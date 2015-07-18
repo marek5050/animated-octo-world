@@ -24,4 +24,4 @@ script:
     - make Collatz.log
     - make test
     - make check
-    - make push
+#    - make push
