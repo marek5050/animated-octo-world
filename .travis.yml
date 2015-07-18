@@ -54,7 +54,7 @@ script:
     - make check
     - cd -
     - cd TravisCI/Python/Collatz
-    - pip install -r requirements.txt
+    - pip3 install -r requirements.txt
     - make collatz-tests
     - make Collatz.html
     - make Collatz.log
