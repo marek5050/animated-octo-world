@@ -1,0 +1,108 @@
+commit 315792505a485091a09970f15d44825875d2bc62
+Author: Marek <marek.bejda@gmail.com>
+Date:   Wed Jun 17 11:07:57 2015 -0500
+
+    Added the .out files
+
+commit 27c12ccc09f52c2b0e8b2cbdcd8a5ad2f133d7b1
+Author: Marek <marek.bejda@gmail.com>
+Date:   Wed Jun 17 11:06:53 2015 -0500
+
+    added runcollatz and testcollatz
+
+commit 71761707fcb8875c7d2540e79a8462171db8efae
+Author: Marek <marek.bejda@gmail.com>
+Date:   Wed Jun 17 11:04:24 2015 -0500
+
+    Removed extras
+
+commit 369d4211dffcf0379fd597f22662dc59d9f8ebc3
+Author: Marek <marek.bejda@gmail.com>
+Date:   Wed Jun 17 11:01:12 2015 -0500
+
+    Modified readme
+
+commit 1784187d0f5f2bda9eb15fcf2d1e714ed86b303c
+Merge: afc7528 aa014d3
+Author: Marek <marek.bejda@gmail.com>
+Date:   Wed Jun 17 10:51:03 2015 -0500
+
+    Merge branch 'dev' of github.com:marek5050/cs378-collatz into dev
+
+commit afc75281000a662076350c786bf6e1b10ffb7882
+Author: Marek <marek.bejda@gmail.com>
+Date:   Wed Jun 17 10:50:58 2015 -0500
+
+    Removed collatz-tests
+
+commit 2d835fd3af0abd840b73076941fe99635af6fd5a
+Author: Marek <marek.bejda@gmail.com>
+Date:   Wed Jun 17 10:50:32 2015 -0500
+
+    Removed extras
+
+commit aa014d38830ba88307153971bce030a9728757e0
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 20:57:25 2015 -0500
+
+    added sudo required
+
+commit 109c856dcfd1d6571e2a6c86c00268bf77e3eb47
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 17:01:57 2015 -0500
+
+    Removed extras
+
+commit 22671bb943993014a3d0c99391d293586899b293
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 17:01:41 2015 -0500
+
+    Cleaning up
+
+commit f68ebf066167a69e1d24c80384df403eb69ece15
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 16:47:22 2015 -0500
+
+    Fixed a bug and assigned unsigned int
+
+commit 5658bfa33aed11a1e280af456b3639584f9d1650
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 16:47:10 2015 -0500
+
+    Fixed a bug and assigned unsigned int
+
+commit 7acc8bf190fac87de32c96316696ac8a06291ebc
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 16:45:40 2015 -0500
+
+    Updated makefile
+
+commit 1937a66e8781342b51f3da3b51b8707c4d7c4d6e
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 14:23:48 2015 -0500
+
+    Sphere accepted solution. Changed to unsigned int to avoid overflow.
+
+commit 9bce806e8aca4176c672b45c9feb61d3756ae13f
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 13:18:43 2015 -0500
+
+    Spelling, comments, and added the travis file.
+
+commit e9e2aa92b2939044ca2d81b334c0d6734cda69c7
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 13:08:05 2015 -0500
+
+    Testing script
+
+commit 34f1fd13e366b2e4ae35de57a7ad5892ebde60e8
+Author: Marek5050 <marek.bejda@gmail.com>
+Date:   Tue Jun 16 11:52:14 2015 -0500
+
+    Initial commit of transferred files.
+
+commit 63731ce1a8a98bb37f8bd2a1b4e2e6f5cf365a4f
+Author: Marek <marek5050@users.noreply.github.com>
+Date:   Sun Jun 14 10:30:56 2015 -0500
+
+    Initial commit
