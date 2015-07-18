@@ -1,4 +1,8 @@
-language: cpp
+language: 
+   - cpp
+   - python
+python:
+  - "3.4"
 compiler: gcc
 sudo: false
 addons:
