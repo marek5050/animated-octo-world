@@ -8,6 +8,7 @@ addons:
       - ubuntu-toolchain-r-test
    packages:
       - python3
+      - coverage3
       - gcc-4.8 
       - g++-4.8
       - clang
@@ -25,7 +26,6 @@ before_script:
     - valgrind --version
     - grep "#define BOOST_VERSION " /usr/include/boost/version.hpp
     - doxygen --version
-    - coverage --version
 
 install: 
     # Install gtest without sudo 
