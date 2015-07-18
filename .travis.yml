@@ -35,6 +35,9 @@ install:
     - cmake -D CMAKE_INSTALL_PREFIX:PATH=./ ./
     - make
     - cd -
+    - cd $TESTFOLDER
+    - pip install -r requirements.txt
+    - cd -
 
 script:
     - cd $TESTFOLDER 
